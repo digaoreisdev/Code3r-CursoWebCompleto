@@ -17,7 +17,6 @@ function gerarVariosNumeros(){
     gerarNumeroEntre(1, 60, 100),
     gerarNumeroEntre(1, 60, 100),
     gerarNumeroEntre(1, 60, 100),
-    gerarNumeroEntre(1, 60, 100),
   ])
 }
 
