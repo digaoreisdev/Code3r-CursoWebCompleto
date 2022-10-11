@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Texto</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <style>
-        /* ... */
+    <style>        
         * {
             margin: 0;
         }
@@ -15,6 +14,64 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        div {
+            font-size: 50px;
+        }
+
+        html {
+            font-size: 28px;
+        }
+
+        p {
+            /* Valores padrões */
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+
+            /* Unidades absolutas */
+            font-size: 100px; /* Tamanho do pixel é relativo a sua tela */
+            font-size: 72pt; /* Pontos */
+            font-size: 1in; /* Polegadas */
+
+            /* Unidades Relativas */
+            font-size: 2.2em; /* Pega como referência de medida o tamanho de fonte mais próximo */
+            font-size: 2.2rem; /* Pega como referência de medida o tamanho de fonte da raiz */
+            font-size: 50vh; /* vh é a altura do viewport */
+            font-size: 10vw; /* vw é a largura do viewport */
+
+            font-family: monospace;
+            font-family: Georgia, serif;
+            font-family: Verdana, sans-serif;
+            font-family: 'Indie Flower', cursive;
+
+            font-weight: 100;
+            font-style: italic;
+            text-transform: uppercase;
+            /* text-decoration: overline underline line-through; */
+            word-spacing: 10px;
+            letter-spacing: 20px;
+            line-height: 2.5em;
+            text-align: center;
+        }
+
+        .botao {
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .destaque {
+            color: #fff;
+            background-color:tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:active {
+            box-shadow: none;
         }
     </style>
 </head>
