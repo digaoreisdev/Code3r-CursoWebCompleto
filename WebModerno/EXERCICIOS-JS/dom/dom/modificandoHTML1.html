@@ -9,7 +9,36 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body = document.querySelector('body');
+
+        const div1 = document.createElement('div')
+        div1.classList.add('estaque')
+        div1.innerHTML = 'Primeiro'
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+        const div3 = document.createElement('div')
+        div3.appendChild(p) //Adiciona o P como o último filho da Div3
+        
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        const texto = document.createTextNode('Antes...')
+        div3.insertBefore(texto, div3.childNodes[0]) //Inseri um filho antes do elemento exatdo indicado
+
+        const div4 = div3.cloneNode(true) //True (Inclui os filhos) / False (Não inclue)
+        body.appendChild(div4)
+
+        const div5 = div3.cloneNode(true)
+        body.appendChild(div5)
+        
+        body.removeChild(div4)
+
     </script>
 </body>
 
