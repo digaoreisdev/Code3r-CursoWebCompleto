@@ -38,4 +38,15 @@ app.post('/formulario', (req, res) => {
     })
 })
 
+app.get('/parOuImpar', (req, res) => {
+  //req.body
+  //req.query
+  //req.params
+  
+  const par = parseInt(req.query.numero) % 2 === 0 //Formula simples para saber se é par ou impar
+  res.send({
+      resultado: par ? 'par' : 'impar'
+  })
+})
+
 app.listen(5500, () => console.log('Executando'))
