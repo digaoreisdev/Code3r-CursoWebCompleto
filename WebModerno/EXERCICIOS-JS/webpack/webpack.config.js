@@ -11,6 +11,13 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public'
     },
+    devServer: {
+      static: {
+          directory: "./public"
+      },
+      compress: true,
+      port: 9000
+  },
     optimization: {
         minimizer: [
             new CssMinimizerPlugin(),
@@ -33,6 +40,9 @@ module.exports = {
                 'css-loader', // interpreta @import, url()
                 'sass-loader',
             ]
+        }, {
+          test: /\.(png|svg|jpg|gif|)$/,
+          use: ['file-loader']
         }]
     }
 }
